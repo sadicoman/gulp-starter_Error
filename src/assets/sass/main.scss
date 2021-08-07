@@ -1,0 +1,32 @@
+/*!
+***
+* Project Site web François
+***
+* Projet perso pour Site web francois
+* option DWM
+*
+* @version: 1.0
+* @author: François Szczepkowski <francois.szcz@hotmail.fr>
+*
+***
+*/
+
+@use "_normalize.scss";
+@use "_type.scss";
+@use "_layout.scss";
+@use "_grid.scss";
+@use "_list.scss";
+@use "_erreur.scss";
+@use "_var.scss" as v;
+
+
+
+
+
+.btn--sanstexte {
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+

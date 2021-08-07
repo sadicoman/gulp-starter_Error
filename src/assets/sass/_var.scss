@@ -1,0 +1,58 @@
+/*
+ * VARIABLES
+** =============================================================== */
+
+/* Color and DarkTheme */
+:root{
+	--color-primary:#4169e1;
+	--color-primary-variant: #00FFFF;
+	// --color-secondary: ;
+	// --color-secondary-variant: ;
+	--color-background: #f1f1f1;
+	--color-surface:  #fff;
+	--color-error: #FF0000;
+	--color-primary-hover: #00FFFF;
+	--color-on-primary: #fff;
+	--color-on-secondary: #000;
+	--color-on-background: #000;
+	--color-on-surface: #000;
+	--color-on-error: #000;
+	--color-on-primary-hover: #4169e1;  
+}
+[data-theme="light"]{
+	--color-primary:#4169e1;
+	--color-primary-variant: #00FFFF;
+	// --color-secondary: ;
+	// --color-secondary-variant: ;
+	--color-background: #f1f1f1;
+	--color-surface:  #fff;
+	--color-error: #FF0000;
+	--color-primary-hover: #00FFFF;
+	--color-on-primary: #fff;
+	--color-on-secondary: #000;
+	--color-on-background: #000;
+	--color-on-surface: #000;
+	--color-on-error: #000;
+	--color-on-primary-hover: #4169e1;  
+}
+
+[data-theme="dark"]{
+	--color-primary:#87ceeb;
+	--color-primary-variant: #00FFFF;
+	// --color-secondary: ;
+	// --color-secondary-variant: ;
+	--color-background: #111111;
+	--color-surface:  #000;
+	--color-error: #FF0000;
+	--color-primary-hover: #4169e1; 
+	--color-on-primary: #09163b;
+	--color-on-secondary: #000;
+	--color-on-background: #fff;
+	--color-on-surface: #fff;
+	--color-on-error: #000;
+	--color-on-primary-hover: #00FFFF;
+}
+
+/* Type */
+$font-text:  'Roboto', sans-serif;
+$font-title: 'Piazzolla', serif;

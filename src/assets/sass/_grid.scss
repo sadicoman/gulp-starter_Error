@@ -1,0 +1,39 @@
+/*
+ * GRILLES CSS
+** =============================================================== */
+
+.section{
+    margin: auto;
+    max-width: 400px;
+    display: grid;
+    padding: 15px;
+    grid-template-columns:  repeat(5, 1fr) ;
+    grid-gap: 16px 8px;
+    
+    &>*{
+        grid-column: 1/-1;
+        max-width: 100%;
+    }
+    &--margin{
+        margin-bottom: 3em;
+    }
+    // .btn,.button{
+    //     width: 50%;
+    //     // grid-column: inherit;
+    //     // grid-column: 1/5;
+    // }
+}
+
+.mgrid-start4 {
+    grid-column-start: 4;
+}
+.mgrid-end3 {
+    grid-column-end: 3;
+}
+.mgrid-end4 {
+    grid-column-end: 4;
+}
+
+.mgridRow-start2 {
+    grid-row-start: 2;
+}

@@ -1,0 +1,19 @@
+/*
+ * LISTES
+** =============================================================== */
+
+@use "_var.scss";
+
+.navBtn {
+    justify-self: end;
+    background-color: inherit;
+    width: 40px;
+    height: 40px;
+    border: none;
+    z-index: 3;
+    border: none;
+    cursor: pointer;
+    color: var(--color-on-primary);
+    padding: 0;
+}
+

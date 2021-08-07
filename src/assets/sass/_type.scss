@@ -1,0 +1,47 @@
+/*
+ * TYPOGRAPHIES
+** =============================================================== */
+
+@use "_var.scss" as v;
+
+/* Main */
+.body{
+    font-family: v.$font-text;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--color-on-background);
+    background-color:var(--color-background);
+}
+
+/* Styles des TITRES */
+.title{
+    font-family: v.$font-title;
+    font-size: 5.375em;
+    letter-spacing: -1.5px;
+}
+.title--niveau2{
+    font-size: 2.625em;
+    font-weight: lighter;
+    text-align: right;
+}
+.title--niveau3{
+    font-size: 2.0625em;
+    font-weight: normal;
+    letter-spacing: 0px;
+}
+.title--niveau4{
+    font-size: 1.625em;
+    font-weight: normal;
+    letter-spacing: 0.15px;
+}
+.bold{
+    font-weight: bold;
+} 
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}

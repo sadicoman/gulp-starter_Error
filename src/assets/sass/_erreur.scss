@@ -1,0 +1,68 @@
+/*
+ * LAYOUT
+** =============================================================== */
+
+@use "_var.scss";
+.body--erreur{
+    overflow: hidden;
+    background-color: #33FFFF;
+}
+.section--title{
+    position: relative;
+}
+.section__title{
+    position:absolute;
+    text-indent: -2000px;
+}
+.section--maintenance{
+    width: 100vw;
+    height: 100vh;
+}
+.svg{
+   width: 100%;
+   height: 100%;
+}
+
+.poulis{
+    animation: grue 4s ease alternate infinite;
+}
+@keyframes grue {
+    0% {
+      transform:  translateX(0);
+    }
+    100% {
+      transform: translateX(180px);
+    }
+}
+.nuage{
+    animation: grapin2 40s ease alternate infinite;
+}
+@keyframes grapin2 {
+    // 0% {
+    //     transform: translateY(0);
+    // }
+    50% {
+        transform: translateX(100px);
+        transform: translateY(-70px);
+    }
+    100% {
+        transform: translateY(70px);
+        transform: translateX(-100px);
+    }
+}
+.section--tablet{
+    display: none;   
+}
+
+@media screen and (min-width: 768px) {
+    .section--tablet {
+      display:inherit;
+    }
+    .section--gsm{
+        display: none;
+    }
+    .svg{
+        width: 100%;
+        height: 100%;
+     }
+}
