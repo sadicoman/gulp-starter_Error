@@ -23,7 +23,9 @@
     //     // grid-column: 1/5;
     // }
 }
-
+.mgrid-start1 {
+    grid-column-start: 1;
+}
 .mgrid-start4 {
     grid-column-start: 4;
 }
@@ -36,4 +38,14 @@
 
 .mgridRow-start2 {
     grid-row-start: 2;
+}
+
+.footer__div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 15px;
+}
+.footer__nav--reseau{
+    justify-self: end;
 }

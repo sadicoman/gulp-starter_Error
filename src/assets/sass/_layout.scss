@@ -115,6 +115,7 @@
 }
 .menu__el{
     text-align: center;
+    opacity: 0;
 }
 .menu__lien{
     color:var(--color-on-primary);
@@ -178,7 +179,28 @@ body[data-menu] .logo--fs{
     position: relative;
     z-index: 99;
     transition: top 0.4s ease-in-out;
+    opacity: 0;
+    animation-delay: 0.3s;
+    animation-duration: 0.6s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
 }
+body[data-menu] .menu__el {
+    // opacity: 1;
+    // transition-delay: 4s;
+    animation-delay: 0.3s;
+    animation-duration: 0.6s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+}
+@keyframes slidein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .navBtn__svg{
     fill:  var(--color-primary);
 }
@@ -374,5 +396,39 @@ body[data-menu] .navBtn__svg{
     &:hover{
         color: var(--color-primary-variant); 
         border-bottom: 2px solid var(--color-primary-variant);
+    }
+}
+
+.nav__lien, .small__lien{
+    color: var(--color-on-secondary);
+    &:hover{
+        color: #4169e1;
+        border-bottom: 2px solid #4169e1;
+    }
+}
+.footer{
+    background-color: var(--color-primary-variant);
+}
+.footer__small{
+    justify-self: center;
+}
+.reseau__el{
+    width: 30px;
+}
+.reseau__lien, .reseau__el, .reseau__img{
+    cursor: pointer;
+}
+.navigation__lien{
+    color: #fff;
+    &:hover{
+        color: #00FFFF;
+        border-bottom: 2px solid #00FFFF;
+    }
+}
+.navigation__lien--prymary{
+    color: #4169e1;
+    &:hover{
+        color: #09163b;
+        border-bottom: 2px solid #09163b;
     }
 }
