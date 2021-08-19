@@ -35,11 +35,36 @@
 .mgrid-end4 {
     grid-column-end: 4;
 }
-
 .mgridRow-start2 {
     grid-row-start: 2;
 }
-
+.tgrid-end3 {
+    grid-column-end: 3;
+}
+.tgrid-end {
+    grid-column-end: -1;
+}
+.tgrid-start1 {
+    grid-column-start: 1;
+}
+.tgrid-start4 {
+    grid-column-start: 4;
+}
+.tgridRow-start4 {
+    grid-row-start: 4;
+}
+.tgridRow-end3 {
+    grid-row-end: 3;
+}
+.tgridRow-end4 {
+    grid-row-end: 4;
+}
+.tgridRow-end5 {
+    grid-row-end: 5;
+}
+.tgridRow-end6 {
+    grid-row-end: 6;
+}
 .footer__div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -49,3 +74,29 @@
 .footer__nav--reseau{
     justify-self: end;
 }
+@media screen and (min-width: 768px) {
+    .section {
+        margin: auto;
+        max-width: 768px;
+        display: grid;
+        padding: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 32px 32px;
+    }
+    .section--projet{
+        padding: 0;
+        max-width: inherit;
+        margin: inherit;
+    }
+    .section--geeky, .image--insecte, .images--abeille{
+       grid-column: 1/3; 
+    }
+    .section--phamidae, .video--cube, .image--colep{
+        grid-column: 3/5; 
+     }
+     .footer__div{
+        padding: 3em;
+        max-width: 768px;
+        margin: auto;
+    }
+}    
