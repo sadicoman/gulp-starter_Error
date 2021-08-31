@@ -38,33 +38,8 @@
 .mgridRow-start2 {
     grid-row-start: 2;
 }
-.tgrid-end3 {
-    grid-column-end: 3;
-}
-.tgrid-end {
-    grid-column-end: -1;
-}
-.tgrid-start1 {
-    grid-column-start: 1;
-}
-.tgrid-start4 {
-    grid-column-start: 4;
-}
-.tgridRow-start4 {
-    grid-row-start: 4;
-}
-.tgridRow-end3 {
-    grid-row-end: 3;
-}
-.tgridRow-end4 {
-    grid-row-end: 4;
-}
-.tgridRow-end5 {
-    grid-row-end: 5;
-}
-.tgridRow-end6 {
-    grid-row-end: 6;
-}
+
+
 .footer__div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -99,4 +74,59 @@
         max-width: 768px;
         margin: auto;
     }
+    .tgrid-end3 {
+        grid-column-end: 3;
+    }
+    .tgrid-end {
+        grid-column-end: -1;
+    }
+    .tgrid-start1 {
+        grid-column-start: 1;
+    }
+    .tgrid-start4 {
+        grid-column-start: 4;
+    }
+    .tgridRow-start4 {
+        grid-row-start: 4;
+    }
+    .tgridRow-end3 {
+        grid-row-end: 3;
+    }
+    .tgridRow-end4 {
+        grid-row-end: 4;
+    }
+    .tgridRow-end5 {
+        grid-row-end: 5;
+    }
+    .tgridRow-end6 {
+        grid-row-end: 6;
+    }
 }    
+@media screen and (min-width: 1400px) {
+    .section {
+        max-width: 1400px;
+        grid-template-columns: repeat(9, 1fr);
+        padding: 5em;
+    }
+    .section--geeky, .image--insecte, .images--abeille{
+       grid-column: 1/5; 
+    }
+    .section--phamidae, .video--cube, .image--colep{
+        grid-column: 6/10; 
+     }
+     .footer__div{
+        max-width: 1400px;
+    }
+    // .video--cube{
+    //     grid-column: 5/10; 
+    //  }
+    .pgridColumn-start6 {
+        grid-column-start: 6;
+    }
+    .pgrid-end5 {
+        grid-column-end: 5;
+    }
+    .pgrid-end8 {
+        grid-column-end: 8;
+    }
+}  
