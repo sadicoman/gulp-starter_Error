@@ -5,14 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>François Szczepkowski</title>
+	<!-- CSS -->
 	<link href="assets/css/main.css" rel="stylesheet" >
-	
+	<!-- Javascript -->
 	<script src="assets/js/main.min.js" defer></script>
-
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
-
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+	
 	<!-- Typographie -->
 	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -27,14 +27,14 @@
 	<meta name="twitter:title" content="Accueil François Szczepkowski">
 	<meta name="twitter:description" content="Site Web - Accueil - François Szczepkowski - Heaj">
 				<!-- Twitter summary card with large image must be at least 280x150px -->
-	<meta name="twitter:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/maintenance_pc.png">
+	<meta name="twitter:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/index.png">
 					<!-- Open Graph data -->
 	<meta property ="og:site_name" content="François Szczepkowski"/>
 	<meta property ="og:title" content="Accueil François Szczepkowski"/>
 	<meta property ="og:description" content="Site Web - Accueil - François Szczepkowski - Heaj"/>
 	<meta property ="og:type" content="website"/>
 	<meta property ="og:url" content="https://francois-szczepkowski.be/personnel/maintenance/index.html" />
-	<meta property ="og:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/maintenance_pc.png" />
+	<meta property ="og:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/index.png" />
 	<meta property ="og:image:width" content="1800">
 	<meta property ="og:image:height" content="945">
 			
@@ -50,7 +50,7 @@
 			  </svg>	  
 		</section> -->
 		<section class="section--title">
-			<h1 class="section__title">François Szczepkowski Accueil</h1>
+			<h1 class="section__title">François Szczepkowski "Curriculum vitæ"</h1>
 		</section>
 		<section class="header">
 			<a href="index.html">
@@ -71,11 +71,11 @@
 			<div class="circle"></div>
 			<nav class="menu">
 				<ul class="menu__liste">
-					<li class="menu__el"><a class="menu__lien menu__lien--active" href="index.html">Accueil</a></li>
+					<li class="menu__el"><a class="menu__lien" href="index.html">Accueil</a></li>
 					<li class="menu__el"><a class="menu__lien" href="projets.html">Projets</a></li>
 					<li class="menu__el"><a class="menu__lien" href="design.html">Designs</a></li>
 					<li class="menu__el"><a class="menu__lien" href="photographie.html">Photographie</a></li>
-					<li class="menu__el"><a class="menu__lien" href="cv.html">C.V</a></li>
+					<li class="menu__el"><a class="menu__lien menu__lien--active" href="cv.html">C.V</a></li>
 					<li class="menu__el"><a class="menu__lien" href="contact.html">Contact</a></li>
 					<li class="menu__el DarkMode">
 						<div class="icone">
@@ -102,8 +102,211 @@
 			</nav>
 		</section>
 	</header>
-	<main class="main">
-		
+	<main class="main main--cv">
+		<section class="section section--margin">
+			<h2 class="title">Bon<span class="bonjour">jour</span>,</h2>
+			<p class="mgrid-end4 pgrid-end5">Je&nbsp;suis François Szczepkowski,&nbsp;étudiant à la <a class="color--primary" href="https://www.heaj.be/fr/"><abbr title="Haute école Albert Jaquard">HEAJ</abbr></a> de Namur en option <a class="color--primary" href="http://dwm.re"><abbr title="Design Web et Mobile">DWM.</abbr></a>&nbsp;J'ai&nbsp;actuellement 21 ans et suis originaire de la région de&nbsp;Thuin.&nbsp;Je&nbsp;suis un grand passionné d'informatique et de jeux&nbsp;vidéo.</p>
+			<p class="mgrid-end4 pgrid-end5">Je&nbsp;suis à la recherche d'un lieu de stage pour l'année&nbsp;2021-2022.</p>
+			<div class="div__btn tgrid-start1 tgrid-end5">
+				<div class="section__btn">
+					<a href="mailto:francois.szcz@hotmail.be" class="button button-mat btn--5 ">
+						<div class="psuedo-text">Me&nbsp;contacter</div>
+					</a>
+				</div>
+				<div class="section__btn section__btn--cv mgrid-start1">
+					<a href="assets/images/cv.pdf" class="button button-mat btn--5 ">
+						<div class="psuedo-text">Télécharger c.v</div>
+					</a>
+				</div>	
+			</div>
+			<img class="mgrid-start4 mgridRow-start2 img--border tgridRow-end5 pgridColumn-start6 pgrid-end8" src="assets/images/moi.jpg" srcset="assets/images/moi@2x.jpg 2x" alt="Photo représentent François Szcepkowski">
+		</section>
+		<section class="section section--margin">
+			<h2 class="title title--niveau3">Expérience professionnelle</h2>
+			<h3 class="title title--niveau4 color--primary">Ambassadeur Intel</h3>
+			<p>2019-2021</p>
+			<p>Media Markt de Braine-l'Alleud</p>
+			<h3 class="title title--niveau4 color--primary">Agence de communication</h3>
+			<p>2017-2019</p>
+			<p>Institut Jean Jaurès de Charleroi</p>
+			<p>Infographie et Communication internet</p>
+			<h3 class="title title--niveau4 color--primary">Exposition Femme de Mars</h3>
+			<p>2016-2017</p>
+			<p>Maison du Hainaut de Charleroi</p>
+			<p>Infographie et Montage de l’exposition</p>
+		</section>
+		<section class="section section--margin">
+			<h2 class="title title--niveau3">Expérience Extra-professionnelle</h2>
+			<h3 class="title title--niveau4 color--primary">Stage chez New Ever Best</h3>
+			<p>2019</p>
+			<p>Charleroi</p>
+			<p>Infographiste</p>
+		</section>
+		<section class="section section--margin">
+			<h2 class="title title--niveau3">Etudes et Formation</h2>
+			<h3 class="title title--niveau4">Haute École Albert Jacquard-Campus infographique</h3>
+			<p>2019</p>
+			<p>Av. Comte de Smet de Nayer 20, 5000 Namur</p>
+			<p class="color--primary">Bac 3 : design web et mobil (2021-2022)</p>		
+			<h3 class="title title--niveau4">INSTITUT JEAN JAURÉS</h3>
+			<p>2016-2019</p>
+			<p>Rue de la Broucheterre, 52b 6000 Charleroi</p>
+			<p class="color--primary">6e secondaire : Technique Qualificative infographies</p>
+			<h3 class="title title--niveau4">INSTITUT PARIDAENS</h3>
+			<p>2012-2016</p>
+			<p>Grand Place 12, 6500 Beaumont</p>
+			<h3 class="title title--niveau4">FORMATION À TECHNOFUTUR_TIC</h3>
+			<p>2015-2016</p>
+			<p>Avenue Jean Mermoz 18, 6041 Charleroi</p>
+			<p class="bold">JavaScript</p>
+		</section>
+		<section class="section section--margin">
+			<h2 class="title title--niveau3">Comptétences</h2>
+			<ul class="listComp">
+				<li class="listComp__el">
+					<svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="60, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--illu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="70, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--ind" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="90, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--after" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="50, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="75, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--html" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="85, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--css" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="75, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--js" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="45, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--invision" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="80, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--git" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="50, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--gulp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="60, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="35, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--visual" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="45, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--obs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="50, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+				<li class="listComp__el">
+					<svg class="circle-svg circle-svg--blender" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+						<path class="around" stroke-dasharray="100, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+						<path class="percent percent--coequipier" stroke-dasharray="40, 100" d="M20 4.1c8.8 0 15.9 7.1 15.9 15.9S28.8 35.9 20 35.9 4.1 28.8 4.1 20 11.2 4.1 20 4.1"/>
+					</svg>
+				</li>
+			</ul>
+			</div>
+		</section>
+		<section class="section section--margin">
+			<h2 class="title title--niveau3">Informations personnelles</h2>
+			<ul>
+				<li>
+					<p>Date de naissance : 14/09/1999</p>
+				</li>
+				<li>
+					<p>Téléphone : 0499/10.47.44</p>
+				</li>
+				<li>
+					<p>Mail : francois.szcz@hotmail.be</p>
+				</li>
+				<li>
+					<p>Chemin de Chambry 1A, 6536 THUILLIES</p>
+				</li>
+			</ul>
+		</section>
+		<section class="section section--margin">
+			<h2 class="title title--niveau3">Hobbies</h2>
+			<ul class="listComp">
+				<li class="listComp__el">
+					<svg class="el__images"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path d="M305.7 173.95c-58.945 0-106.9 47.955-106.9 106.9s47.956 106.9 106.9 106.9 106.899-47.955 106.899-106.9-47.954-106.9-106.899-106.9zm0 198.8c-50.674 0-91.9-41.226-91.9-91.9s41.227-91.9 91.9-91.9 91.899 41.226 91.899 91.9-41.225 91.9-91.899 91.9z"/>
+						<path d="M305.7 240.217c-22.405 0-40.634 18.228-40.634 40.633s18.228 40.633 40.634 40.633c22.405 0 40.633-18.228 40.633-40.633s-18.228-40.633-40.633-40.633zm0 66.266c-14.135 0-25.634-11.499-25.634-25.633s11.499-25.633 25.634-25.633c14.134 0 25.633 11.499 25.633 25.633s-11.499 25.633-25.633 25.633z"/>
+						<path d="M471.366 140.817h-27.268c-10.542 0-19.884-6.325-23.799-16.114l-16.472-41.177c-6.206-15.517-21.015-25.542-37.728-25.542H228.732c-16.712 0-31.52 10.026-37.727 25.542l-16.471 41.177c-3.916 9.789-13.258 16.114-23.8 16.114H114.4v-17.634c0-8.547-6.953-15.5-15.5-15.5H65.2c-8.547 0-15.5 6.953-15.5 15.5v17.634h-9.067C18.228 140.817 0 159.045 0 181.45v231.933c0 22.405 18.228 40.633 40.633 40.633H194.52a7.5 7.5 0 000-15h-13.853v-17.633c0-8.547-6.953-15.5-15.5-15.5h-17.633v-183.8h31.08c-8.301 17.881-12.946 37.79-12.946 58.767 0 77.214 62.819 140.033 140.034 140.033 69.01 0 126.514-50.18 137.957-115.967H454.8c13.271 0 24.066-10.796 24.066-24.066 0-13.271-10.796-24.067-24.066-24.067h-11.143a138.855 138.855 0 00-10.87-34.7H497V269.6c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-88.15c0-22.405-18.228-40.633-40.634-40.633zM64.7 123.183a.5.5 0 01.5-.5h33.7a.5.5 0 01.5.5v17.634H64.7zm-24.067 32.634h91.9v51.267H15V181.45c0-14.134 11.499-25.633 25.633-25.633zm125.033 265.566v17.633H114.4v-17.633a.5.5 0 01.5-.5h50.267a.5.5 0 01.499.5zm-33.133-15.5H114.9c-8.547 0-15.5 6.953-15.5 15.5v17.633H40.633C26.499 439.017 15 427.518 15 413.383V338.05h25.633a7.5 7.5 0 000-15H15v-18.133h25.633a7.5 7.5 0 000-15H15v-18.133h25.633a7.5 7.5 0 000-15H15v-34.7h117.533zm173.167 0c-68.944 0-125.034-56.09-125.034-125.033s56.09-125.033 125.034-125.033c68.943 0 125.033 56.09 125.033 125.033S374.644 405.883 305.7 405.883zm149.1-134.1c4.999 0 9.066 4.067 9.066 9.067 0 4.999-4.067 9.066-9.066 9.066h-9.368c.193-2.999.302-6.02.302-9.066 0-3.047-.109-6.068-.302-9.067zm-30.124-64.7c-24.734-39.748-68.813-66.267-118.976-66.267s-94.242 26.518-118.976 66.267h-39.191v-51.267h3.201c16.711 0 31.521-10.026 37.727-25.543l16.471-41.177c3.916-9.789 13.258-16.113 23.8-16.113H366.1c10.543 0 19.885 6.325 23.8 16.113l16.472 41.177c6.206 15.517 21.015 25.543 37.727 25.543h27.268c14.135 0 25.634 11.499 25.634 25.633v25.633h-72.325z"/>
+						<path d="M504.5 292.1a7.5 7.5 0 00-7.5 7.5v113.784c0 14.134-11.499 25.633-25.634 25.633H224.519a7.5 7.5 0 000 15h246.848c22.405 0 40.634-18.228 40.634-40.633V299.6a7.5 7.5 0 00-7.501-7.5zM355.4 107.683H239.433a7.5 7.5 0 000 15H355.4c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"/>
+						<path d="M471.366 420.883a7.5 7.5 0 007.5-7.5V380.25a7.5 7.5 0 00-7.5-7.5h-33.133a7.5 7.5 0 00-7.5 7.5v33.133a7.5 7.5 0 007.5 7.5zm-25.633-33.133h18.133v18.133h-18.133z"/>
+					</svg>					  
+				</li>
+				<li class="listComp__el">
+					<svg class="el__images"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path d="M256 313.652c-51.283 0-93.005 41.722-93.005 93.004 0 51.283 41.722 93.005 93.005 93.005 8.629 0 17.177-1.182 25.405-3.515 3.981-1.128 6.294-5.269 5.165-9.25-1.128-3.981-5.268-6.293-9.25-5.165-6.899 1.955-14.073 2.947-21.32 2.947-43.021 0-78.022-35-78.022-78.022 0-43.021 35.001-78.022 78.022-78.022s78.022 35 78.022 78.022c0 23.5-10.444 45.524-28.655 60.422-3.202 2.62-3.674 7.339-1.054 10.542s7.34 3.674 10.542 1.054c21.703-17.755 34.15-44.005 34.15-72.018 0-51.282-41.722-93.004-93.005-93.004z"/>
+						<path d="M474.227 240.479v-9.914c0-120.331-97.896-218.226-218.227-218.226-30.81 0-60.615 6.324-88.586 18.795-27.008 12.042-50.962 29.181-71.198 50.941-2.817 3.03-2.645 7.77.384 10.587 3.029 2.818 7.769 2.646 10.587-.384 38.391-41.28 92.63-64.956 148.813-64.956 112.015 0 203.154 91.087 203.242 203.082-1.687-11.244-11.41-19.894-23.116-19.894h-19.079c-4.724-38.137-22.863-73.324-51.446-99.538C335.582 83.438 296.658 68.275 256 68.275c-40.986 0-80.143 15.378-110.257 43.302-28.241 26.186-46.109 61.1-50.793 98.933H75.874c-11.708 0-21.431 8.653-23.116 19.899.031-40.354 11.91-79.36 34.363-112.81 2.306-3.435 1.39-8.089-2.046-10.395-3.434-2.304-8.088-1.391-10.395 2.046-24.144 35.972-36.906 77.923-36.906 121.317v9.914C16.713 241.864 0 259.429 0 280.834v120.017c0 22.306 18.147 40.454 40.454 40.454h12.045v6.494c0 12.89 10.486 23.376 23.376 23.376h32.599c12.89 0 23.376-10.487 23.376-23.376V233.886c0-12.357-9.64-22.499-21.794-23.317C119.911 138.556 182.504 83.258 256 83.258c73.192 0 136.089 55.424 145.947 127.312-12.155.815-21.797 10.958-21.797 23.317V447.8c0 12.89 10.486 23.376 23.376 23.376h32.599c12.89 0 23.377-10.487 23.377-23.376v-6.494h12.044c22.307 0 40.454-18.148 40.454-40.454V280.834c0-21.405-16.713-38.969-37.773-40.355zM40.454 426.322c-14.044 0-25.471-11.426-25.471-25.471V280.834c0-14.044 11.426-25.471 25.471-25.471h12.045v170.959zm76.412-192.436v213.913c0 4.628-3.765 8.393-8.393 8.393H75.874c-4.628 0-8.393-3.765-8.393-8.393V233.886c0-4.628 3.765-8.393 8.393-8.393h32.599c4.628 0 8.393 3.765 8.393 8.393zm380.151 166.965c0 14.044-11.426 25.471-25.471 25.471h-12.044V309.401c0-4.137-3.354-7.491-7.491-7.491-4.138 0-7.491 3.354-7.491 7.491v138.398c0 4.628-3.765 8.393-8.394 8.393h-32.599c-4.628 0-8.393-3.765-8.393-8.393V233.886c0-4.628 3.765-8.393 8.393-8.393h32.599c4.629 0 8.394 3.765 8.394 8.393v39.996c0 4.137 3.354 7.491 7.491 7.491 4.138 0 7.491-3.354 7.491-7.491v-18.519h12.044c14.044 0 25.471 11.426 25.471 25.471z"/>
+						<path d="M196.049 273.929c4.138 0 7.491-3.354 7.491-7.491v-60.701c0-4.137-3.354-7.491-7.491-7.491-4.138 0-7.491 3.354-7.491 7.491v60.701c0 4.137 3.353 7.491 7.491 7.491zm149.878-65.212c-4.138 0-7.491 3.354-7.491 7.491v39.758c0 4.137 3.354 7.491 7.491 7.491s7.491-3.354 7.491-7.491v-39.758c.001-4.137-3.353-7.491-7.491-7.491zm-112.411 74.582v-94.423c0-4.137-3.354-7.491-7.491-7.491s-7.491 3.354-7.491 7.491v94.423c0 4.137 3.354 7.491 7.491 7.491s7.491-3.353 7.491-7.491zm29.975-8.43v-77.562c0-4.137-3.354-7.491-7.491-7.491s-7.491 3.354-7.491 7.491v77.562c0 4.137 3.354 7.491 7.491 7.491s7.491-3.354 7.491-7.491zm59.952 8.43v-94.423c0-4.137-3.354-7.491-7.491-7.491s-7.491 3.354-7.491 7.491v94.423c0 4.137 3.354 7.491 7.491 7.491s7.491-3.353 7.491-7.491zm-29.976-37.804V226.68c0-4.137-3.354-7.491-7.491-7.491s-7.491 3.354-7.491 7.491v18.815c0 4.137 3.354 7.491 7.491 7.491s7.491-3.353 7.491-7.491zm-119.902 0V226.68c0-4.137-3.354-7.491-7.491-7.491-4.138 0-7.491 3.354-7.491 7.491v18.815c0 4.137 3.354 7.491 7.491 7.491 4.137.001 7.491-3.353 7.491-7.491zm124.778 149.484l-58.624-33.847c-4.222-2.438-9.263-2.438-13.485 0-4.222 2.437-6.742 6.803-6.742 11.678v67.694c0 4.875 2.521 9.24 6.742 11.678 4.222 2.438 9.263 2.438 13.485 0l58.624-33.847c4.222-2.438 6.742-6.804 6.742-11.679s-2.52-9.24-6.742-11.677zm-63.868 42.929v-62.503l54.129 31.252z"/>
+					</svg>	  
+				</li>
+				<li class="listComp__el">
+					<svg class="el__images el__images--joy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.07 480.07">
+						<path d="M184.034 328.032h-32v-32a8 8 0 00-8-8h-32a8 8 0 00-8 8v32h-32a8 8 0 00-8 8v32a8 8 0 008 8h32v32a8 8 0 008 8h32a8 8 0 008-8v-32h32a8 8 0 008-8v-32a8 8 0 00-8-8zm-8 32h-32a8 8 0 00-8 8v32h-16v-32a8 8 0 00-8-8h-32v-16h32a8 8 0 008-8v-32h16v32a8 8 0 008 8h32v16z"/>
+						<path d="M479.234 337.416c-6.136-55.128-57.912-106.704-113.088-112.584a132.799 132.799 0 00-14.112-.8h-88v-32h-16v-16c0-17.673-14.327-32-32-32h-40c-8.837 0-16-7.163-16-16s7.163-16 16-16h128c17.673 0 32-14.327 32-32s-14.327-32-32-32h-40c-8.837 0-16-7.163-16-16v-32h-16v32c0 17.673 14.327 32 32 32h40c8.837 0 16 7.163 16 16s-7.163 16-16 16h-128c-17.673 0-32 14.327-32 32s14.327 32 32 32h40c8.837 0 16 7.163 16 16v16h-16v32h-88c-4.72.011-9.437.278-14.128.8-55.2 5.92-106.944 57.496-113.064 112.624-8.037 70.234 42.383 133.686 112.618 141.723a128.002 128.002 0 0081.942-18.346 78.35 78.35 0 0135.112-12.408c6.19-.489 12.407-.511 18.6-.064a78.945 78.945 0 0135.664 12.544c60.135 37.164 139.012 18.543 176.176-41.593a128.001 128.001 0 0018.28-81.896zm-247.2-129.384h16v16h-16v-16zm203.48 218.672c-36.169 40.456-96.148 49.138-142.304 20.6a94.402 94.402 0 00-42.952-14.904 141.211 141.211 0 00-10.224-.368c-3.64 0-7.2.152-10.784.432a94.108 94.108 0 00-42.304 14.768c-52.602 32.545-121.627 16.287-154.173-36.315a112 112 0 01-16.027-71.685c5.264-47.376 51.456-93.392 98.88-98.488 4.12-.461 8.262-.698 12.408-.712h224c4.145.003 8.287.224 12.408.664 47.416 5.096 93.6 51.112 98.88 98.488a111.2 111.2 0 01-27.808 87.52z"/>
+						<path d="M352.034 272.032c-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32 17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32zm0 48c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.164 16-16 16zm0 48c-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32 17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32zm0 48c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.164 16-16 16zm-56-96c-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32 17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32zm0 48c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.164 16-16 16zm112-48c-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32 17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32zm0 48c-8.837 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.164 16-16 16z"/>
+					</svg>					  
+				</li>
+				<li class="listComp__el">
+					<svg class="el__images" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418 418">
+						<path d="M207.6 404.2c-14.3 0-28.5-2.9-41.7-8.6l-63.1-27.4c-22.8-9.9-47-16.2-71.7-18.7l-20.7-2.1c-3.4-.3-6-3.2-6-6.6v-65c0-1.4.5-2.8 1.3-4 1.5-2.1 38.7-50.6 95.4-38 31.9 7.1 57.6 20.4 73.5 30.2 11.6 7.2 25.1 11 39.2 11H277c10.9 0 20.4 5.8 25.8 14.4l54.3-62.6c10.5-14.1 27.8-22.7 45.8-22.7h4.1c2.3 0 4.4 1.1 5.6 3 1.2 1.9 1.4 4.3.5 6.3L364 325.1c-10.7 24.4-32.6 42.9-58.5 49.4l-8.6 2.2-50.3 20.1c-12.5 5-25.8 7.4-39 7.4zM17.7 334.8l14.7 1.5c26.1 2.6 51.6 9.3 75.7 19.7l63.1 27.4c22.2 9.6 47.8 10 70.2 1l50.7-20.3.9-.3 9.1-2.3c21.9-5.5 40.5-21.1 49.5-41.8l44.8-101.9c-11.5 1.7-22 7.9-29.1 17.3l-60.2 69.4v.8c0 16.7-13.6 30.3-30.3 30.3h-88c-11.4 0-22.8 1.8-33.6 5.5l-2.4-6.2-2.1-6.3.3-.1c12.2-4.1 24.9-6.1 37.8-6.1h88c9.4 0 17-7.6 17-17s-7.6-17-17-17h-63.1c-16.6 0-32.6-4.5-46.2-13-15-9.3-39.3-21.9-69.4-28.6-43-9.5-73.9 23.4-80.5 31.3l.1 56.7zM267 202.6c-10.3 0-21.8-3.2-34.4-9.5-1.5-.8-2.7-2.1-3.3-3.7-.5-1.4-12.4-35.7 6.5-61.1 13.8-18.4 39.6-26.7 77-24.6 3.4.2 6.1 2.9 6.3 6.3.1 2.6 2.9 65.2-29 86-6.8 4.4-14.5 6.6-23.1 6.6zm-25.9-20.2c17.5 8.2 31.5 9 41.7 2.4 18.9-12.3 23-49 23.1-68.1-29.2-.7-49.1 5.9-59.4 19.6-12.2 16.3-7.4 38.7-5.4 46.1zM165 115.3c-11.8 0-25.5-2.5-37.4-11.3-20.2-14.8-29.5-43-27.6-83.7.2-3.4 2.9-6.1 6.3-6.3 2.9-.2 71.2-3.8 94.1 30.7 10.7 16.1 9.8 37.1-2.6 62.5-.8 1.5-2.1 2.7-3.7 3.3-.8.3-13.3 4.8-29.1 4.8zm26.9-11.1zm-78.7-77.1c-.6 32.6 6.9 54.9 22.3 66.2 18.5 13.5 43.6 7.8 51.6 5.5 9.1-19.7 9.8-35.4 2.3-46.7-14.1-21.2-55.2-25.3-76.2-25z"/>
+						<path d="M217.1 286h-.6c-3.6-.3-6.2-3.4-6-7 .4-7.8 1.1-15.3 2-22.3 2.8-47.2 1.3-157.1-68.1-187.5-3.4-1.5-4.9-5.4-3.4-8.8 1.5-3.4 5.4-4.9 8.8-3.4 40.9 17.9 66.7 62.5 74.5 129 .7 6 1.2 11.8 1.6 17.5 18.3-46.2 46.3-62.6 48-63.5 3.2-1.8 7.3-.7 9.1 2.5 1.8 3.2.7 7.3-2.5 9.1-.7.4-43.6 26.2-54.4 105.6-.8 13.6-2 22.3-2.1 23.1-.7 3.3-3.6 5.7-6.9 5.7z"/>
+					</svg>					  
+				</li>
+			</ul>
+		</section>
 	</main>
 	<footer class="footer">		
 		<div class="footer__div">

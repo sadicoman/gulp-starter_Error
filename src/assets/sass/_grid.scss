@@ -58,6 +58,12 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 32px 32px;
     }
+    .section--atelier{
+        grid-template-columns: repeat(2, 1fr);
+        &>*{
+            grid-column: auto;
+        }
+    }
     .section--projet{
         padding: 0;
         max-width: inherit;
@@ -76,6 +82,9 @@
     }
     .tgrid-end3 {
         grid-column-end: 3;
+    }
+    .tgrid-end5 {
+        grid-column-end: 5;
     }
     .tgrid-end {
         grid-column-end: -1;
@@ -113,7 +122,14 @@
     }
     .section--phamidae, .video--cube, .image--colep{
         grid-column: 6/10; 
-     }
+    }
+    .section--atelier{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+        &>*{
+            grid-column: auto;
+        }
+    }
      .footer__div{
         max-width: 1400px;
     }
@@ -128,5 +144,8 @@
     }
     .pgrid-end8 {
         grid-column-end: 8;
+    }
+    .pgrid-end {
+        grid-column-end: -1;
     }
 }  

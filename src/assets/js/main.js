@@ -81,31 +81,72 @@ if(navButton){
     }
 }
 /*-------------Bonjour et Bonsoir-----------------*/
-let bonjour = document.querySelector(".bonjour");
-let heure   = new Date().getHours();
-    if (heure >= 4 && heure <= 17) {
-        bonjour.innerHTML = "jour";
-    }
-    else {
-        bonjour.innerHTML = "soir";
-    }
-// let heure   = now.getHours();
-
-
-
+let mainIndex = document.querySelector(".main--index");
+if(mainIndex){
+  let bonjour = document.querySelector(".bonjour");
+  let heure   = new Date().getHours();
+      if (heure >= 4 && heure <= 17) {
+          bonjour.innerHTML = "jour";
+      }
+      else {
+          bonjour.innerHTML = "soir";
+      }
+  // let heure   = now.getHours();
+}
 
 /*-------------------- Copyright --------------------*/
 
 let date = new Date().getFullYear(); 
-
 document.getElementById("year").innerHTML = date;
-
-
 
 /*----------Selecteur dans le html----------*/
 let btns = document.querySelectorAll('.btn');
 let sectionEls = document.querySelectorAll('.section__el');
 let section = document.querySelectorAll('.section');
+
+/*--------------------Filtre pour la Gallery--------------------*/
+
+for(let btn of btns){ // pour chaque element 'btn' du tableau 'btns'
+  btn.addEventListener('click', (e) =>{ // lors du click sur 'btn'
+    let dataValue = btn.getAttribute('data-filter'); // on récupère le 'data-filter'
+    
+    let btnActive = document.querySelector('.btn--active'); // on recherche le bouton actif
+    btnActive.classList.remove('btn--active'); // on retire la classe 'btn--active' du bouton actif
+    btn.classList.add('btn--active'); // on ajoute la classe 'btn--active' au btn clické
+  
+    for(let sectionEl of sectionEls){ // pour chaque 'sectionEl' du tableau 'sectionEls'
+      if(!sectionEl.classList.contains(dataValue)){ // si 'sectionEl' ne contient pas 'dataValue'
+        sectionEl.classList.add('img--hidden'); // on ajoute la classe 'img--hidden' pour toutes les cacher
+      }else{ // sinon, donc si 'sectionEl' contient 'dataValue'
+        sectionEl.classList.remove('img--hidden'); // on retire la classe 'img--hidden' pour les faire apparaitre  
+      }
+    };
+  });
+};
+/*----------Image au click----------*/
+let lbs = document.querySelectorAll('.lb');
+let imgs = document.querySelectorAll('.container__img');
+
+let lbBig = false;
+
+for(let i = 0 ; i < imgs.length ; i++){
+  if(!lbBig){
+    imgs[i].addEventListener('click', (e) =>{
+      lbs[i].classList.add('lb--big'); 
+      lbBig = true;
+    });
+  }
+}
+for (let lb of lbs){
+  lb.addEventListener('click', (e) =>{
+    if(lbBig){
+      lb.classList.remove('lb--big');
+      lbBig = false;
+    }
+  }); 
+}
+
+
 
 /*----------Annimation apparition au scroll sur index----------*/
 
@@ -148,7 +189,7 @@ for(let i = 0 ; i < section.length ; i++){
 /*----------Annimation apparition au scroll sur Gallery----------*/
 
 for(let i = 0 ; i < sectionEls.length ; i++){
-    if(i < 5){
+    if(i < 2){
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionEls[i],
@@ -183,3 +224,5 @@ for(let i = 0 ; i < sectionEls.length ; i++){
       });
     }
   };
+
+  

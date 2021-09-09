@@ -5,36 +5,36 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>François Szczepkowski</title>
+	<!-- CSS -->
 	<link href="assets/css/main.css" rel="stylesheet" >
-	
+	<!-- Javascript -->
 	<script src="assets/js/main.min.js" defer></script>
-
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
-
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+	
 	<!-- Typographie -->
 	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 	     <!-- Google -->
-	<meta name="title" content="Accueil François Szczepkowski">
-	<meta name="description" content="Site Web - Accueil - François Szczepkowski - Heaj">
+	<meta name="title" content="Design François Szczepkowski">
+	<meta name="description" content="Site Web - Design - François Szczepkowski - Heaj">
 								<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@publisher_handle">
 	<meta name="twitter:creator" content="@author_handle">
-	<meta name="twitter:title" content="Accueil François Szczepkowski">
-	<meta name="twitter:description" content="Site Web - Accueil - François Szczepkowski - Heaj">
+	<meta name="twitter:title" content="Design François Szczepkowski">
+	<meta name="twitter:description" content="Site Web - Design - François Szczepkowski - Heaj">
 				<!-- Twitter summary card with large image must be at least 280x150px -->
-	<meta name="twitter:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/maintenance_pc.png">
+	<meta name="twitter:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/index.png">
 					<!-- Open Graph data -->
 	<meta property ="og:site_name" content="François Szczepkowski"/>
-	<meta property ="og:title" content="Accueil François Szczepkowski"/>
-	<meta property ="og:description" content="Site Web - Accueil - François Szczepkowski - Heaj"/>
+	<meta property ="og:title" content="Design François Szczepkowski"/>
+	<meta property ="og:description" content="Site Web - Design - François Szczepkowski - Heaj"/>
 	<meta property ="og:type" content="website"/>
-	<meta property ="og:url" content="https://francois-szczepkowski.be/personnel/maintenance/index.html" />
-	<meta property ="og:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/maintenance_pc.png" />
+	<meta property ="og:url" content="https://francois-szczepkowski.be/personnel/maintenance/design.html" />
+	<meta property ="og:image" content="https://francois-szczepkowski.be/personnel/maintenance/assets/images/index.png" />
 	<meta property ="og:image:width" content="1800">
 	<meta property ="og:image:height" content="945">
 			
@@ -71,9 +71,9 @@
 			<div class="circle"></div>
 			<nav class="menu">
 				<ul class="menu__liste">
-					<li class="menu__el"><a class="menu__lien menu__lien--active" href="index.html">Accueil</a></li>
+					<li class="menu__el"><a class="menu__lien" href="index.html">Accueil</a></li>
 					<li class="menu__el"><a class="menu__lien" href="projets.html">Projets</a></li>
-					<li class="menu__el"><a class="menu__lien" href="design.html">Designs</a></li>
+					<li class="menu__el"><a class="menu__lien menu__lien--active" href="design.html">Designs</a></li>
 					<li class="menu__el"><a class="menu__lien" href="photographie.html">Photographie</a></li>
 					<li class="menu__el"><a class="menu__lien" href="cv.html">C.V</a></li>
 					<li class="menu__el"><a class="menu__lien" href="contact.html">Contact</a></li>
@@ -103,13 +103,460 @@
 		</section>
 	</header>
 	<main class="main">
-		
+		<section>
+			<ul class="nav">
+			  <li class="nav__el"><button class="btn btn--active" data-filter="section__el">All</button></li>
+			  <li class="nav__el"><button class="btn" data-filter="design">Design</button></li>
+			  <li class="nav__el"><button class="btn" data-filter="illu">Illustration</button></li>
+			  <li class="nav__el"><button class="btn" data-filter="picto">Picto</button></li>
+			  <li class="nav__el"><button class="btn" data-filter="logo">Logo</button></li>
+			  <li class="nav__el"><button class="btn" data-filter="video">Vidéo</button></li>
+			</ul>
+		</section>
+		<section class="gallery">
+			<div class="gallery__container">
+				<div class="container__section">
+					<!-- image 1 -->
+    				<div class="section__el picto column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/test2.jpg" srcset="assets/images/test2@2x.jpg 2x" alt="Picto du magasin la rogére en version badge 3D">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/test2.jpg" srcset="assets/images/test2@2x.jpg 2x" class="flex__img" alt="Picto du magasin la rogére en version badge 3D">
+	  					</div>
+					</div>
+					<!-- image 2 -->
+    				<div class="section__el picto column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/test.jpg" srcset="assets/images/test@2x.jpg 2x" alt="Picto du magasin la rogére">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/test.jpg" srcset="assets/images/test@2x.jpg 2x" class="flex__img" alt="Picto du magasin la rogére">
+	  					</div>
+					</div>
+					<!-- image 3 -->
+    				<div class="section__el design column--span12">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Plandetravail2.jpg" srcset="assets/images/Plandetravail2@2x.jpg 2x" alt="Affiche horizontal teste design">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Plandetravail2.jpg" srcset="assets/images/Plandetravail2@2x.jpg 2x" class="flex__img" alt="Affiche horizontal teste design">
+	  					</div>
+					</div>
+					<!-- image 4 -->
+    				<div class="section__el design column--span4">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/SAM_3054.jpg" srcset="assets/images/SAM_3054@2x.jpg 2x" alt="EAC 5e Secondaire à l'institut Jean jaurés de Charleroi">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/SAM_3054.jpg" srcset="assets/images/SAM_3054@2x.jpg 2x" class="flex__img" alt="EAC 5e Secondaire à l'institut Jean jaurés de Charleroi">
+	  					</div>
+					</div>
+					<!-- image 5 -->
+    				<div class="section__el design column--span4 ">
+						<div class="el__container">
+							<img class="container__img " src="assets/images/SAM_3062.jpg" srcset="assets/images/SAM_3062@2x.jpg 2x" alt="EAC 5e Secondaire à l'institut Jean jaurés de Charleroi">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/SAM_3062.jpg" srcset="assets/images/SAM_3062@2x.jpg 2x" class="flex__img" alt="EAC 5e Secondaire à l'institut Jean jaurés de Charleroi">
+	  					</div>
+					</div>
+					<!-- image 6 -->
+    				<div class="section__el logo column--span4">
+						<div class="el__container ">
+							<img class="container__img img--contain" src="assets/images/Szczepkowski-François-carte.jpg" srcset="assets/images/Szczepkowski-François-carte@2x.jpg 2x" alt="Logo Sadico Verion Ninja">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Szczepkowski-François-carte.jpg" srcset="assets/images/Szczepkowski-François-carte@2x.jpg 2x" class="flex__img" alt="Logo Sadico Verion Ninja">
+	  					</div>
+					</div>
+					<!-- image 7 -->
+    				<div class="section__el design column--span12">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/UE150_photo1920_B1E1_Szczepkowski_François_panoperso.jpg" srcset="assets/images/UE150_photo1920_B1E1_Szczepkowski_François_panoperso@2x.jpg 2x" alt="Photo 360 designer en noir et blanc + grillage + inscrustation de personnage">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/UE150_photo1920_B1E1_Szczepkowski_François_panoperso.jpg" srcset="assets/images/UE150_photo1920_B1E1_Szczepkowski_François_panoperso@2x.jpg 2x" class="flex__img" alt="Photo 360 designer en noir et blanc + grillage + inscrustation de personnage">
+	  					</div>
+					</div>
+					<!-- image 8 -->
+    				<div class="section__el design column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/TRAVAIL_ILLU_PRAT_V2.jpg" srcset="assets/images/TRAVAIL_ILLU_PRAT_V2@2x.jpg 2x" alt="Réalisation d'une planche de coleoptére avec inscurstation d'une voiture">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/TRAVAIL_ILLU_PRAT_V2.jpg" srcset="assets/images/TRAVAIL_ILLU_PRAT_V2@2x.jpg 2x" class="flex__img" alt="Réalisation d'une planche de coleoptére avec inscurstation d'une voiture">
+	  					</div>
+					</div>
+					
+					<!-- image 9 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/avatarlowpoly.png" srcset="assets/images/avatarlowpoly@2x.png 2x" alt="Illustration réprésentation de François Szczepkowski en forme géométrique simple">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/avatarlowpoly.png" srcset="assets/images/avatarlowpoly@2x.png 2x" class="flex__img" alt="Illustration réprésentation de François Szczepkowski en forme géométrique simple">
+	  					</div>
+					</div>
+					<!-- image 10 -->
+    				<div class="section__el design illu column--span6 column--span3">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/beaumont.png" srcset="assets/images/beaumont@2x.png 2x" alt="Panneau publicitaire d'une région 'Beaumont' et de son monument en version illustration">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/beaumont.png" srcset="assets/images/beaumont@2x.png 2x" class="flex__img" alt="Panneau publicitaire d'une région 'Beaumont' et de son monument en version illustration">
+	  					</div>
+					</div>
+					<!-- image 11 -->
+    				<div class="section__el illu column--span6 column--span3">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/caract_v2.png" srcset="assets/images/caract_v2@2x.png 2x" alt="Illustration de l'avatar de Master Sadicoman">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/caract_v2.png" srcset="assets/images/caract_v2@2x.png 2x" class="flex__img" alt="Illustration de l'avatar de Master Sadicoman">
+	  					</div>
+					</div>
+					<!-- image 12 -->
+    				<div class="section__el illu column--span6 column--span3">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/couleur_Chaud@2x.png" srcset="assets/images/couleur_Chaud@2x.png 2x" alt="Illustration vitrail d'un mini arbre couleur chaude">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/couleur_Chaud@2x.png" srcset="assets/images/couleur_Chaud@2x.png 2x" class="flex__img" alt="Illustration vitrail d'un mini arbre couleur chaude">
+	  					</div>
+					</div>
+					<!-- image 13 -->
+    				<div class="section__el illu column--span6 column--span3">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/couleur_Froid.png" srcset="assets/images/couleur_Froid@2x.png 2x" alt="Illustration vitrail d'un mini arbre couleur froide">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/couleur_Froid.png" srcset="assets/images/couleur_Froid@2x.png 2x" class="flex__img" alt="Illustration vitrail d'un mini arbre couleur froide">
+	  					</div>
+					</div>
+					<!-- image 14 -->
+    				<div class="section__el illu column--span12">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Error403.png" srcset="assets/images/Error403@2x.png 2x" alt="Illustration de la page web Erreur 403">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Error403.png" srcset="assets/images/Error403@2x.png 2x" class="flex__img" alt="Illustration de la page web Erreur 403">
+	  					</div>
+					</div>
+					<!-- image 15 -->
+    				<div class="section__el design column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/essaie_02.png" srcset="assets/images/essaie_02@2x.png 2x" alt="Teste de design sur le principe des coupure papier journal et collage">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/essaie_02.png" srcset="assets/images/essaie_02@2x.png 2x" class="flex__img" alt="Teste de design sur le principe des coupure papier journal et collage">
+	  					</div>
+					</div>
+					<!-- image 16 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/exercice_2_Fruit_Finich.png" srcset="assets/images/exercice_2_Fruit_Finich@2x.png 2x" alt="Illustration et réprésentation d'un maÏs diabolique">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/exercice_2_Fruit_Finich.png" srcset="assets/images/exercice_2_Fruit_Finich@2x.png 2x" class="flex__img" alt="Illustration et réprésentation d'un maÏs diabolique">
+	  					</div>
+					</div>
+					<!-- image 17 -->
+    				<div class="section__el logo column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Francois_EACi1_CDV_Remédiation.png" srcset="assets/images/Francois_EACi1_CDV_Remédiation@2x.png 2x" alt="Logo de Saved protection du loup asbl">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Francois_EACi1_CDV_Remédiation.png" srcset="assets/images/Francois_EACi1_CDV_Remédiation@2x.png 2x" class="flex__img" alt="Logo de Saved protection du loup asbl">
+	  					</div>
+					</div>
+					<!-- image 18 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/heimer.png" srcset="assets/images/heimer@2x.png 2x" alt="Représentation de Heimerdinger">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/heimer.png" srcset="assets/images/heimer@2x.png 2x" class="flex__img" alt="Représentation de Heimerdinger">
+	  					</div>
+					</div>
+					<!-- image 19 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/illu_Num_v7_color_01.png" srcset="assets/images/illu_Num_v7_color_01@2x.png 2x" alt="Illustration porte des étoiles dans un monde aquatique">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/illu_Num_v7_color_01.png" srcset="assets/images/illu_Num_v7_color_01@2x.png 2x" class="flex__img" alt="Illustration porte des étoiles dans un monde aquatique">
+	  					</div>
+					</div>
+					<!-- image 20 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/illu_Num_v7_color_02.png" srcset="assets/images/illu_Num_v7_color_02@2x.png 2x" alt="Illustration porte des étoiles dans un monde aquatique">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/illu_Num_v7_color_02.png" srcset="assets/images/illu_Num_v7_color_02@2x.png 2x" class="flex__img" alt="Illustration porte des étoiles dans un monde aquatique">
+	  					</div>
+					</div>
+					<!-- image 21 -->
+    				<div class="section__el illu column--span12">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/illu_Num_v7_color_03.png" srcset="assets/images/illu_Num_v7_color_03@2x.png 2x" alt="Illustration porte des étoiles dans un monde aquatique">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/illu_Num_v7_color_03.png" srcset="assets/images/illu_Num_v7_color_03@2x.png 2x" class="flex__img" alt="Illustration porte des étoiles dans un monde aquatique">
+	  					</div>
+					</div>
+					<!-- image 22 -->
+    				<div class="section__el design column--span6">
+						<div class="el__container">
+							<img class="container__img img--contain" src="assets/images/invitationajmo1@2x.png" srcset="assets/images/invitationajmo1@2x.png 2x" alt="Invitation flyers Clap d'or 2018">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/invitationajmo1@2x.png" srcset="assets/images/invitationajmo1@2x.png 2x" class="flex__img" alt="Invitation flyers Clap d'or 2018">
+	  					</div>
+					</div>
+					<!-- image 23 -->
+    				<div class="section__el design column--span6">
+						<div class="el__container">
+							<img class="container__img img--contain" src="assets/images/invitationajmo12.png" srcset="assets/images/invitationajmo12@2x.png 2x" alt="Invitation flyers Clap d'or 2018">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/invitationajmo12.png" srcset="assets/images/invitationajmo12@2x.png 2x" class="flex__img" alt="Invitation flyers Clap d'or 2018">
+	  					</div>
+					</div>
+					<!-- image 24 -->
+    				<div class="section__el design column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/invitationbase2.png" srcset="assets/images/invitationbase2@2x.png 2x" alt="Invitation flyers Clap d'or 2018">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/invitationbase2.png" srcset="assets/images/invitationbase2@2x.png 2x" class="flex__img" alt="Invitation flyers Clap d'or 2018">
+	  					</div>
+					</div>
+					<!-- image 25 -->
+    				<div class="section__el design column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/invitationbase22.png" srcset="assets/images/invitationbase22@2x.png 2x" alt="Invitation flyers Clap d'or 2018">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/invitationbase22.png" srcset="assets/images/invitationbase22@2x.png 2x" class="flex__img" alt="Invitation flyers Clap d'or 2018">
+	  					</div>
+					</div>
+					<!-- image 26 -->
+    				<div class="section__el illu column--span4">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/kled.png" srcset="assets/images/kled@2x.png 2x" alt="Illustration de Kled">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/kled.png" srcset="assets/images/kled@2x.png 2x" class="flex__img" alt="Illustration de Kled">
+	  					</div>
+					</div>
+					<!-- image 27 -->
+    				<div class="section__el logo column--span4">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/logo_gala_test_8.png" srcset="assets/images/logo_gala_test_8@2x.png 2x" alt="Logo Wasp Soccer gold">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/logo_gala_test_8.png" srcset="assets/images/logo_gala_test_8@2x.png 2x" class="flex__img" alt="Logo Wasp Soccer gold">
+	  					</div>
+					</div>
+					<!-- image 28 -->
+    				<div class="section__el Logo column--span4">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Logo_titre_effet3.png" srcset="assets/images/Logo_titre_effet3@2x.png 2x" alt="Logo Wasp Soccer">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Logo_titre_effet3.png" srcset="assets/images/Logo_titre_effet3@2x.png 2x" class="flex__img" alt="Logo Wasp Soccer">
+	  					</div>
+					</div>
+					<!-- image 29 -->
+    				<div class="section__el logo column--span4">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Logofoncer2.png" srcset="assets/images/Logofoncer2@2x.png 2x" alt="Logo projet iolce">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Logofoncer2.png" srcset="assets/images/Logofoncer2@2x.png 2x" class="flex__img" alt="Logo projet iolce">
+	  					</div>
+					</div>
+					<!-- image 30 -->
+    				<div class="section__el design illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/loup+dessin.png" srcset="assets/images/loup+dessin@2x.png 2x" alt="Loup dessin">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/loup+dessin.png" srcset="assets/images/loup+dessin@2x.png 2x" class="flex__img" alt="Loup dessin">
+	  					</div>
+					</div>
+					<!-- image 31 -->
+    				<div class="section__el illu column--span8">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/miseenaction_V2_Plandetravail1.png" srcset="assets/images/miseenaction_V2_Plandetravail1@2x.png 2x" alt="Illustration Master Sadicoman">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/miseenaction_V2_Plandetravail1.png" srcset="assets/images/miseenaction_V2_Plandetravail1@2x.png 2x" class="flex__img" alt="Illustration Master Sadicoman">
+	  					</div>
+					</div>
+					<!-- image 32 -->
+    				<div class="section__el logo column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/mon-logo-jeux.png" srcset="assets/images/mon-logo-jeux@2x.png 2x" alt="Logo Master Sadicoman">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/mon-logo-jeux.png" srcset="assets/images/mon-logo-jeux@2x.png 2x" class="flex__img" alt="Logo Master Sadicoman">
+	  					</div>
+					</div>
+					<!-- image 33 -->
+    				<div class="section__el design column--span8">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/onembarque_test.png" srcset="assets/images/onembarque_test@2x.png 2x" alt="Aplication de bus">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/onembarque_test.png" srcset="assets/images/onembarque_test@2x.png 2x" class="flex__img" alt="Aplication de bus">
+	  					</div>
+					</div>
+					<!-- image 34 -->
+    				<div class="section__el illu column--span8">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/paysage_Couverture_V2.png" srcset="assets/images/paysage_Couverture_V2@2x.png 2x" alt="Illustration Master Sadicoman">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/paysage_Couverture_V2.png" srcset="assets/images/paysage_Couverture_V2@2x.png 2x" class="flex__img" alt="Illustration Master Sadicoman">
+	  					</div>
+					</div>
+					<!-- image 35 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/paysage_Gris.png" srcset="assets/images/paysage_Gris@2x.png 2x" alt="Illustration montagne avec challet">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/paysage_Gris.png" srcset="assets/images/paysage_Gris@2x.png 2x" class="flex__img" alt="Illustration montagne avec challet">
+	  					</div>
+					</div>
+					<!-- image 36 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/paysage05_Couleur_01.png" srcset="assets/images/paysage05_Couleur_01@2x.png 2x" alt="Illustration montagne avec challet">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/paysage05_Couleur_01.png" srcset="assets/images/paysage05_Couleur_01@2x.png 2x" class="flex__img" alt="Illustration montagne avec challet">
+	  					</div>
+					</div>
+					<!-- image 37 -->
+    				<div class="section__el illu column--span12">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Plandetravail1.png" srcset="assets/images/Plandetravail1@2x.png 2x" alt="Ville de Thuin">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Plandetravail1.png" srcset="assets/images/Plandetravail1@2x.png 2x" class="flex__img" alt="Ville de Thuin">
+	  					</div>
+					</div>
+					<!-- image 38 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Plandetravail3.png" srcset="assets/images/Plandetravail3@2x.png 2x" alt="Beffroi de Thuin">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Plandetravail3.png" srcset="assets/images/Plandetravail3@2x.png 2x" class="flex__img" alt="Beffroi de Thuin">
+	  					</div>
+					</div>
+					<!-- image 39 -->
+    				<div class="section__el illu column--span6">
+						<div class="el__container">
+							<img class="container__img" src="assets/images/Szczepkowski_Francois_B1E1_ex1chat.png" srcset="assets/images/Szczepkowski_Francois_B1E1_ex1chat@2x.png 2x" alt="chat">
+						</div>
+	  				</div>
+					<div class="lb">
+	  					<div class="lb__flex">
+							<img src="assets/images/Szczepkowski_Francois_B1E1_ex1chat.png" srcset="assets/images/Szczepkowski_Francois_B1E1_ex1chat@2x.png 2x" class="flex__img" alt="chat">
+	  					</div>
+					</div>
+				</div>
+				<video  class="video video--cube shadow video--design" autoplay loop>
+					<source src="assets/images/Ti2d.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">		
 		<div class="footer__div">
 			<ul class="footer__nav">
 				<li class="nav__el"><a class="nav__lien" href="projets.html">Projets Scolaire</a></li>
-				<li class="nav__el"><a class="nav__lien" href="design.html">Designs</a></li>
 				<li class="nav__el"><a class="nav__lien" href="photographie.html">Photographie</a></li>
 				<li class="nav__el"><a class="nav__lien" href="cv.html">Curriculum vitæ</a></li>
 				<li class="nav__el"><a class="nav__lien" href="contact.html">Contact</a></li>
