@@ -42,10 +42,10 @@ function toggleTheme(){
 	let theme = document.body.getAttribute("data-theme");
 	if(theme == "dark"){
 		setTheme("light");
-        document.querySelector(".js-theme-trigger").innerHTML = "DarkMode";
+        document.querySelector(".js-theme-trigger--p").innerHTML = "DarkMode";
 	}else{
 		setTheme("dark");
-        document.querySelector(".js-theme-trigger").innerHTML = "LightMode";
+        document.querySelector(".js-theme-trigger--p").innerHTML = "LightMode";
 	}
 }
 

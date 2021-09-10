@@ -100,6 +100,10 @@
     font-size: 20px;
     transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
 }
+.menu__lien--darkMode{
+    padding: 12px 0px 12px 72px;
+    display: flex;
+}
 .DarkMode{
     display: flex;
     align-self: center;
@@ -146,6 +150,7 @@ body[data-menu] .menu {
     height: 100%;
     width: 100%;
     z-index: 2;
+    overflow-y: scroll;
 }
 body[data-menu] .main{
     display: none;
@@ -493,6 +498,12 @@ body[data-menu] .navBtn__svg{
     .imgBacground--hello{
         background-image: url("../../assets/images/helloWolrd@2x.jpg");
     }
+    .imgBacground--maintenance{
+        background-image: url("../../assets/images/maintenance_pc@2x.png");
+    }
+    .imgBacground--erreur{
+        background-image: url("../../assets/images/Error403@2x.png");
+    }
 }
 .section__div > * {
     padding-bottom: 8px;
@@ -605,10 +616,22 @@ padding-top: 16px;
     padding: 0px;
     padding-top: 10px;
 }
-
-
-
-
+.darkSvg:hover{
+    fill: var(--color-primary);
+}
+.DarkMode--icone{
+    background-image:url("../../assets/images/lune_Loup.svg");
+    background-repeat: no-repeat;
+}
+.DarkMode--icone:hover{
+    background-image:url("../../assets/images/lune_LoupHover.svg");
+}
+body[data-theme="dark"] .DarkMode--icone {
+    background-image:url("../../assets/images/soleil_lune-Lion.svg");
+}
+body[data-theme="dark"] .DarkMode--icone:hover {
+    background-image:url("../../assets/images/soleil_lune-LionHover.svg");
+}
 
 
 
@@ -752,9 +775,13 @@ padding-top: 16px;
         // margin: .5em;
         font-size: 1.1em;
         transition: inherit;
-
-        &:hover{
+        
+        &:hover, .darkSvg:hover{
             color: var(--color-primary);
+            fill: var(--color-primary);
+            // .darkSvg:hover{
+            //     fill: var(--color-primary);
+            // }
         }
         &--active{
             color: var(--color-on-primary-hover);
@@ -799,5 +826,8 @@ padding-top: 16px;
     }
     .section__div .section__btn {
         padding-top: 32px;
+    }
+    .menu__lien--darkMode {
+        padding: 12px 0px 12px 70px;
     }
 }  
