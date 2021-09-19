@@ -61,6 +61,7 @@ const watchFiles = () => {
 	gulp.watch([
 		"./src/assets/images/**/*.jpg",
 		"./src/assets/images/**/*.png",
+		"./src/assets/images/**/*.svg",
 		"./src/assets/images/**/*.gif"
 	], compressImages);
 	gulp.watch("./src/*.html", gulp.series(html, browserReload));
@@ -85,6 +86,7 @@ const compressImages = () => {
 	return gulp.src([
 		"./src/assets/images/**/*.jpg",
 		"./src/assets/images/**/*.png",
+		"./src/assets/images/**/*.svg",
 		"./src/assets/images/**/*.gif"
 	  ])
 	 .pipe(imagemin({
