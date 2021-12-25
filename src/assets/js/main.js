@@ -1,25 +1,4 @@
 "use strict";
-/*-------------Import GSAP-----------------*/
-
-// import  gsap  from "gsap";
-// import  ScrollTrigger  from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-
-// import { gsap } from "gsap/dist/gsap";
-// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-
-// const { gsap } = require("gsap/dist/gsap");
-// const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
-// gsap.registerPlugin(ScrollTrigger);
-
-/*----- DarkMode -----*/
-// let theme = document.body.getAttribute("data-theme");
-// if(theme == "dark"){
-//     document.querySelector(".js-theme-trigger").innerHTML = "LightMode";
-// }else{
-//     document.querySelector(".js-theme-trigger").innerHTML = "DarkMode";
-// }
 // Gestion de localStorage au chargement de la page
 let activeTheme = localStorage.getItem("theme");
 if(activeTheme !== null){
