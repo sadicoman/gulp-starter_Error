@@ -16,6 +16,15 @@
     to {
         opacity: 0;
     }
+    // 0%{
+    //     opacity: 0;
+    // }
+    // 50%{
+    //     opacity: 1;
+    // }
+    // 100%{
+    //     opacity: 0;
+    // }
 }
 @keyframes loaderLogo {
     0%{
@@ -38,12 +47,12 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    animation: loader .6s 4s forwards  cubic-bezier(1,0,0,1);
+    animation: loader .6s 4s forwards cubic-bezier(1,0,0,1);
     transition: .6s;
     pointer-events: none;
     .loader--fs{
         width: 80%;
-        animation: loaderLogo 4s cubic-bezier(.45,.05,.55,.95);
+        animation: loaderLogo 4s forwards cubic-bezier(.45,.05,.55,.95);
         opacity: 0.75;
         transition: .3s;
     }
@@ -633,11 +642,23 @@ body[data-theme="dark"] .DarkMode--icone:hover {
     background-image:url("../../assets/images/soleil_lune-LionHover.svg");
 }
 
-
-
-
-
-
+.projets .img{
+    width: 100%;
+}
+.image--badge{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.logo--footer{
+    width: 80px;
+}
+.footer__contact{
+    padding-top: 10px;
+}
+.copyright{
+    padding-top: 20px;
+}
 
 
 
@@ -778,7 +799,7 @@ body[data-theme="dark"] .DarkMode--icone:hover {
         // display: inline-block;
         padding: 0.5em;
         // margin: .5em;
-        font-size: 1.1em;
+        font-size: 0.8em;
         transition: inherit;
         
         &:hover, .darkSvg:hover{
@@ -833,6 +854,9 @@ body[data-theme="dark"] .DarkMode--icone:hover {
         padding-top: 32px;
     }
     .menu__lien--darkMode {
-        padding: 12px 0px 12px 70px;
+        padding: 12px 0px 12px 50px;
+    }
+    .images--abeille, .image--colep{
+        width: 100%;
     }
 }  

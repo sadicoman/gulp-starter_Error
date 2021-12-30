@@ -43,7 +43,7 @@
 .footer__div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding: 15px;
 }
 .footer__nav--reseau{
@@ -67,7 +67,8 @@
     .section--projet{
         padding: 0;
         max-width: inherit;
-        margin: inherit;
+        margin: 0;
+        padding: 0;
     }
     .section--geeky, .image--insecte, .images--abeille{
        grid-column: 1/3; 
@@ -76,9 +77,11 @@
         grid-column: 3/5; 
      }
      .footer__div{
+        grid-template-columns: repeat(3, 1fr);
         padding: 3em;
         max-width: 768px;
         margin: auto;
+        grid-gap: 25px;
     }
     .tgrid-end3 {
         grid-column-end: 3;
@@ -145,7 +148,13 @@
     .pgrid-end8 {
         grid-column-end: 8;
     }
+    .pgrid-end9 {
+        grid-column-end: 9;
+    }
     .pgrid-end {
         grid-column-end: -1;
+    }
+    .pgridRow-start1{
+        grid-row-start: 1;
     }
 }  

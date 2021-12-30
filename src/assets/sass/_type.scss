@@ -12,7 +12,9 @@
     color:var(--color-on-background);
     background-color:var(--color-background);
 }
-
+.nav__lien, .footer__contact{
+    font-size: 14px; 
+}
 /* Styles des TITRES */
 .title{
     font-family: v.$font-title;
