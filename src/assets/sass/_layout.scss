@@ -11,32 +11,107 @@
 .shadow{
     box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
 }
-/* Loader */
-@keyframes loader {
-    to {
-        opacity: 0;
-    }
-    // 0%{
-    //     opacity: 0;
-    // }
-    // 50%{
-    //     opacity: 1;
-    // }
-    // 100%{
-    //     opacity: 0;
-    // }
-}
-@keyframes loaderLogo {
+
+
+
+
+
+.conteneur{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    // margin: 6em;
+    position: relative;
+  /*   max-width: 800px;
+    margin: auto; */
+  }
+  .conteneur__img{
+    width:100%;
+    position: relative;
+  }
+  .circle--design{
+    width:150px;
+    padding:3em;
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    animation: circle 15s linear infinite;
+  } 
+  @keyframes circle{
     0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
+      transform:rotate(0deg);
     }
     100%{
+      transform:rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Loader */
+// @keyframes loader {
+//     to {
+//         opacity: 0;
+//     }
+//     // 0%{
+//     //     opacity: 0;
+//     // }
+//     // 50%{
+//     //     opacity: 1;
+//     // }
+//     // 100%{
+//     //     opacity: 0;
+//     // }
+// }
+// @keyframes loaderLogo {
+//     0%{
+//         opacity: 0;
+//     }
+//     50%{
+//         opacity: 1;
+//     }
+//     100%{
+//         opacity: 0;
+//     }
+// }
+.loader--fs{
+    background:inherit;
+    path {
         opacity: 0;
+        fill: none;
+        stroke: #4169e1;
+        stroke-width: 2px;
     }
 }
+
 .section--loader{
     width:  100%;
     height: 100vh;
@@ -47,14 +122,14 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    animation: loader .6s 4s forwards cubic-bezier(1,0,0,1);
-    transition: .6s;
+    // animation: loader .6s 4s forwards cubic-bezier(1,0,0,1);
+    // transition: .6s;
     pointer-events: none;
     .loader--fs{
-        width: 80%;
-        animation: loaderLogo 4s forwards cubic-bezier(.45,.05,.55,.95);
-        opacity: 0.75;
-        transition: .3s;
+        width: 50%;
+        // animation: loaderLogo 4s forwards cubic-bezier(.45,.05,.55,.95);
+        // opacity: 0.75;
+        // transition: .3s;
     }
 }
 .circle{	
@@ -83,6 +158,10 @@
     }
     .logo--fs{
         width: 50px;
+        cursor: pointer;
+        path{
+            cursor: pointer;
+        }
     }
 }
 .menu{
@@ -163,6 +242,12 @@ body[data-menu] .menu {
     z-index: 2;
     overflow-y: scroll;
 }
+body[data-menu] .DarkMode--icone:hover {
+    background-image: url(../../assets/images/lune_Loup.svg);
+}
+body[data-menu] .logo--footer{
+    display: none;
+}
 body[data-menu] .main{
     display: none;
 }
@@ -201,6 +286,10 @@ body[data-menu] .menu__el {
   }
 .navBtn__svg{
     fill:  var(--color-primary);
+    cursor: pointer;
+    path{
+        cursor: pointer; 
+    }
 }
 body[data-menu] .navBtn__svg{
     fill: #fff;
@@ -277,6 +366,7 @@ body[data-menu] .navBtn__svg{
     transition: 0.25s ease-in;
     transition-delay: 0s;
     transition-delay: 0.1s;
+    cursor: pointer;
 }
 .button-mat:hover {
     color: transparent;
@@ -471,6 +561,9 @@ body[data-menu] .navBtn__svg{
     background-size: contain;
     background-color: #232036;
 }
+.imgBacground--tfe{
+    background-image: url("../../assets/images/tfe.png");
+}
 .imgBacground--tfa{
     background-image: url("../../assets/images/phamidae.png");
 }
@@ -494,6 +587,7 @@ body[data-menu] .navBtn__svg{
 }
 .imgBacground--creaapp{
     background-image: url("../../assets/images/creaapp.png");
+    background-position: bottom;
 }
 .imgBacground--ilab{
     background-image: url("../../assets/images/Ilab_Migratio.png");
@@ -655,6 +749,7 @@ body[data-theme="dark"] .DarkMode--icone:hover {
 
 .projets .img{
     width: 100%;
+    max-height: 508px;
 }
 .image--badge{
     width: 100%;
@@ -663,6 +758,10 @@ body[data-theme="dark"] .DarkMode--icone:hover {
 }
 .logo--footer{
     width: 80px;
+    cursor: pointer;
+    path{
+        cursor: pointer;
+    }
 }
 .footer__contact{
     padding-top: 10px;

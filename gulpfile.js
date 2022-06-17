@@ -38,6 +38,20 @@ const javascript = () => {
 	  .pipe(browserSyncServer.stream());
 }
 
+const lib = () => {
+	return gulp.src('./src/assets/lib/**/*.js')
+	 .pipe(sourcemaps.init())
+	 .pipe(sourcemaps.write('./'))
+	 .pipe(gulp.dest( './dist/assets/lib/'))
+}
+
+const son = () => {
+	return gulp.src('./src/assets/son/**/*.mp3')
+	 .pipe(sourcemaps.init())
+	 .pipe(sourcemaps.write('./'))
+	 .pipe(gulp.dest( './dist/assets/son/'))
+}
+
 const html = () => {
 	return gulp.src('./src/*.html')
 		.pipe(gulp.dest( './dist/'));
@@ -45,6 +59,7 @@ const html = () => {
 
 const fonts = () => {
 	return gulp.src([
+		"./src/assets/fonts/**/*.ttf",
 		"./src/assets/fonts/**/*.woff",
 		"./src/assets/fonts/**/*.woff2"
 	])
@@ -54,7 +69,10 @@ const fonts = () => {
 const watchFiles = () => {
 	gulp.watch("./src/assets/sass/**/*.scss", styles);
 	gulp.watch("./src/assets/js/**/*.js", javascript);
+	gulp.watch("./src/assets/lib/**/*.js", lib);
+	gulp.watch("./src/assets/son/**/*.mp3", son);
 	gulp.watch([
+		"./src/assets/fonts/**/*.ttf",
 		"./src/assets/fonts/**/*.woff",
 		"./src/assets/fonts/**/*.woff2"
 	], fonts);
@@ -96,7 +114,7 @@ const compressImages = () => {
 	 .pipe(gulp.dest('./dist/assets/images/'))
 }
 
-const build = gulp.series(html, styles, javascript, compressImages, fonts);
+const build = gulp.series(html, styles, javascript, lib, son, compressImages, fonts);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 const compress = gulp.series(compressImages);
 

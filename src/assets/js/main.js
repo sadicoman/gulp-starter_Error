@@ -1,4 +1,68 @@
 "use strict";
+
+gsap.set('.loader--fs path', {
+  opacity: 1,
+  // stroke: '#4169e1'
+});
+
+// gsap.timeline().from('.loader--fs path', {
+//     duration: 3.5,
+//     drawSVG:0,
+//     ease:'power1.inOut'
+//   }).to('.loader--fs path', {
+//     fill: '#4169e1',
+//     // stroke: '#4169e1',
+//     duration: 0.4
+//   }, 4);
+
+
+
+
+
+
+
+const tlLoader = gsap.timeline({});
+
+// tlLoader.set('.loader--fs path', {
+//   // opacity: 1,
+//   stroke: '#4169e1',
+//   fill: '#4169e1',
+// });
+
+// tlLoader.from('.loader--fs path', {
+//     duration: 3.5,
+//     drawSVG:0,
+//     ease:'power1.inOut'
+//   }).to('.loader--fs path', {
+//     fill: '#4169e1',
+//     // stroke: '#4169e1',
+//     duration: 0.4
+//   }, 4);
+
+
+  tlLoader.from('.loader--fs path', {
+    duration: 3.5,
+    drawSVG:0,
+    ease:'power1.inOut'
+  });
+  tlLoader.to('.loader--fs path', {
+    fill: '#4169e1',
+    drawSVG:"100%",
+    // stroke: '#4169e1',
+    duration: 0.4
+    // duration: 3.5
+  });
+
+
+
+  tlLoader.to('.loader--fs path, .section--loader', {
+    opacity: 0,
+    delay: 1
+  });
+
+
+
+
 // Gestion de localStorage au chargement de la page
 let activeTheme = localStorage.getItem("theme");
 if(activeTheme !== null){
