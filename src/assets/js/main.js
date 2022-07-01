@@ -267,3 +267,14 @@ for(let i = 0 ; i < sectionEls.length ; i++){
       });
     }
   }
+
+
+
+
+
+  // let percent = document.querySelectorAll('.percent');
+  // let sectionPercent = section.getAttribute("style");
+
+  // if (section == sectionPercent) {
+  //   percent.classList.add('percent--anim');
+  // }
