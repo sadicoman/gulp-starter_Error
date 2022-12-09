@@ -278,3 +278,8 @@ for(let i = 0 ; i < sectionEls.length ; i++){
   // if (section == sectionPercent) {
   //   percent.classList.add('percent--anim');
   // }
+
+
+
+
+
