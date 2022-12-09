@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Javascript</title>
+    <!-- CSS -->
+	<link href="style.css" rel="stylesheet" >
+	<!-- Javascript -->
+	<script src="main.js" defer></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Calculatrice 2 Sadico</h2>
+        <div class="container--el">
+            <p class="btn--reponse output total" value=""></p>
+            <button class="btn" value="AC" onclick="reset(this)">AC</button>
+            <button class="btn" value="CE" onclick="remove1(this)">CE</button>
+            <button class="btn" value="%" onclick="showValue(this)">%</button>
+            <button class="btn" value="/"  onclick="showValue(this)">÷</button>
+            <button class="btn" value="7"  onclick="showValue(this)">7</button>
+            <button class="btn" value="8"  onclick="showValue(this)">8</button>
+            <button class="btn" value="9"  onclick="showValue(this)">9</button>
+            <button class="btn" value="*"  onclick="showValue(this)">x</button>
+            <button class="btn" value="4"  onclick="showValue(this)">4</button>
+            <button class="btn" value="5"  onclick="showValue(this)">5</button>
+            <button class="btn" value="6"  onclick="showValue(this)">6</button>
+            <button class="btn" value="-"  onclick="showValue(this)">-</button>
+            <button class="btn" value="1"  onclick="showValue(this)">1</button>
+            <button class="btn" value="2"  onclick="showValue(this)">2</button>
+            <button class="btn" value="3"  onclick="showValue(this)">3</button>
+            <button class="btn" value="+"  onclick="showValue(this)">+</button>
+            <button class="btn btn--grand" value="0"  onclick="showValue(this)">0</button>
+            <button class="btn" value="."  onclick="showValue(this)">.</button>
+            <button class="btn" value="="  onclick="calcul(this)">=</button>
+        </div>
+    </div>
+</body>
+</html>
