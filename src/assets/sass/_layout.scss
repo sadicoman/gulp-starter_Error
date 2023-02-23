@@ -605,7 +605,12 @@ body[data-menu] .navBtn__svg{
 .imgBacground--ilab{
     background-image: url("../../assets/images/Ilab_Migratio.png");
 }
-
+.imgBacground--calculatrice{
+    background-image: url("../../assets/images/calculatrice.png");
+}
+.imgBacground--card{
+    background-image: url("../../assets/images/card.png");
+}
 // image Retina
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
@@ -630,6 +635,12 @@ body[data-menu] .navBtn__svg{
     }
     .imgBacground--erreur{
         background-image: url("../../assets/images/Error403@2x.png");
+    }
+    .imgBacground--calculatrice{
+        background-image: url("../../assets/images/calculatrice.png");
+    }
+    .imgBacground--card{
+        background-image: url("../../assets/images/card.png");
     }
 }
 .section__div > * {
@@ -686,6 +697,9 @@ padding-top: 16px;
     &--invision{
         background-image:url("../../assets/images/invision.svg");
     }
+    &--figma{
+        background-image:url("../../assets/images/figma.svg");
+    }
     &--node{
         background-image:url("../../assets/images/nodejs-icon.svg");
     }
@@ -704,6 +718,18 @@ padding-top: 16px;
     }
     &--blender{
         background-image:url("../../assets/images/blender-2.svg");
+    }
+    &--divi{
+        background-image:url("../../assets/images/divi.svg");
+    }
+    &--php{
+        background-image:url("../../assets/images/php.svg");
+    }
+    &--wordpress{
+        background-image:url("../../assets/images/wordpress.svg");
+    }
+    &--greensock{
+        background-image:url("../../assets/images/greensock.svg");
     }
 }
 .around {
